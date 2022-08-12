@@ -190,20 +190,22 @@
         </div>
 
         <div class="form-container">
-          <form action="" class="contact-form">
+          <form id="contactform" action="https://formsubmit.io/send/sandro.olgesashvili@gmail.com" class="contact-form" method="POST">
+            <input type="hidden" name="_captcha" value="false"/>
+            <input name="_redirect" type="hidden" id="name" value="https://sandro-olgesashvili.github.io/Sandro-portfolio/">
             <div class="input-group">
               <div class="input">
-                <input type="text" id="name" required>
+                <input type="text" id="name" name="name" required>
                 <label for="name" class="input-label">Name <span class="required-field">*</span></label>
               </div>
 
               <div class="input">
-                <input type="text" id="email" required>
+                <input type="text" id="email" name="email" required>
                 <label for="email" class="input-label">Email <span class="required-field">*</span></label>
               </div>
             </div>
             <div class="input">
-              <input type="text" id="message" required>
+              <textarea name="comment" id="comment" rows="3" required></textarea>
               <label for="message" class="input-label">Message <span class="required-field">*</span></label>
             </div>
             <button type="submit" class="button form-button button-fill">Send Message</button>
@@ -217,11 +219,6 @@
       <div class="footer-container container">
         <div class="social-media">
           <ul class="list">
-            <!-- <li class="list-item">
-              <a href="#" class="list-link">
-                <i class="bx bxl-twitter"></i>
-              </a>
-            </li> -->
             <li class="list-item">
               <a href="https://github.com/sandro-olgesashvili" target="_blank" class="list-link">
                 <i class="bx bxl-github"></i>

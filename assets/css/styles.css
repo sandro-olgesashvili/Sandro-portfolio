@@ -553,14 +553,21 @@ textarea {
     transition: transform .25s;
 }
 
-.input input {
+.input input,
+.input textarea {
     width: 100%;
     border-bottom: 1px solid var(--dark-color);
     padding: .5rem;
 }
 
+.input textarea {
+    resize: vertical;
+}
+
 .input input:focus + .input-label,
-.input input:valid + .input-label {
+.input input:valid + .input-label,
+.input textarea:focus + .input-label,
+.input textarea:valid + .input-label  {
     transform: translateY(-2.5rem);
 }
 
